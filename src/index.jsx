@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Usuario, OtroUsuario } from "./Start";
 import { Button } from "./Button";
+import { Task } from "./TaskCard";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -38,9 +39,11 @@ var data = [
 
 root.render(
   <>
-    <Button text="Hola" name="Juan"/>
-    <Button text="Hola" name="Pedro"/>
-    <Button text="Hola"/>
+    <Task ready={false}/>
+
+    <Button text="Hola" name="Juan" />
+    <Button text="Hola" name="Pedro" />
+    <Button text="Hola" />
 
     <OtroUsuario data={data[0]} />
     <OtroUsuario data={data[1]} />
