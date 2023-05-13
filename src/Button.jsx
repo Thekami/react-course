@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
-export function Button({text, name="Usuario genérico"}){
+export function Button ({ text, name = 'Usuario genérico' }) {
   return <button>{text} - {name}</button>
 }
 
@@ -9,5 +9,5 @@ Button.propTypes = {
 }
 
 Button.defaultProps = {
-  name: "Usuario default prop"
+  name: 'Usuario default prop'
 }

@@ -1,19 +1,19 @@
-import "./css/style.css";
+import './css/style.css'
 
 // Estilos con hoja de estilos externa
-export function Task({ ready }) {
+export function Task ({ ready }) {
   return (
-    <div className="card">
+    <div className='card'>
       <h1>Mi tarea</h1>
-      <span className={ready ? "ready" : "no-ready"}>
-        {ready ? "Terminada" : "Pendiente"}
+      <span className={ready ? 'ready' : 'no-ready'}>
+        {ready ? 'Terminada' : 'Pendiente'}
       </span>
     </div>
-  );
+  )
 }
 
 // Estilos con json
-/* 
+/*
 export function Task() {
   const card = {
     background: "black",

@@ -1,4 +1,4 @@
-export function Usuario(params) {
+export function Usuario (params) {
   return (
     <>
       <h1>
@@ -16,10 +16,10 @@ export function Usuario(params) {
       </ul>
       <p>Suma de puntos: {Sumar(params.puntos)}</p>
     </>
-  );
+  )
 }
 
-export function OtroUsuario({ data }) {
+export function OtroUsuario ({ data }) {
   return (
     <>
       <h1>
@@ -37,13 +37,13 @@ export function OtroUsuario({ data }) {
       </ul>
       <p>Suma de puntos: {Sumar(data.puntos)}</p>
     </>
-  );
+  )
 }
 
-export function Sumar(params) {
-  var suma = 0;
+export function Sumar (params) {
+  var suma = 0
   for (let i = 0; i < params.length; i++) {
-    suma += params[i];
+    suma += params[i]
   }
-  return suma;
+  return suma
 }
